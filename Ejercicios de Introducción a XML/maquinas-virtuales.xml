@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Maquina-virtuals>
+    <Maquina-virtual id="vm1">
+        <Nombre>Windows</Nombre>
+        <CPU>4</CPU>
+        <RAM unidades="MB">8192</RAM>
+        <Disco tipo="vdi">D:/maquinas/windows.vdi</Disco>
+        <Tamano-del-disco unidades="GB">100</Tamano-del-disco>
+        <adaptador-de-red modo="NAT">
+            <Reenvio-de-puertos>
+                <normas>
+                    <HostPort>8080</HostPort>
+                    <GuestPort>80</GuestPort>
+                </normas>
+                <normas>
+                    <HostPort>2222</HostPort>
+                    <GuestPort>22</GuestPort>
+                </normas>
+            </Reenvio-de-puertos>
+        </adaptador-de-red>
+    </Maquina-virtual>
+    <Maquina-virtual id="vm2">
+        <Nombre>LinuxMint2</Nombre>
+        <CPU>2</CPU>
+        <RAM unidades="MB">4096</RAM>
+        <Disco tipo="vmdk">D:/maquinas/linuxmint2.vmdk</Disco>
+        <Tamano-del-disco unidades="GB">50</Tamano-del-disco>
+        <adaptador-de-red modo="Bridge"/>
+    </Maquina-virtual>
+    <Maquina-virtual id="vm3">
+        <Nombre>millan</Nombre>
+        <CPU>1</CPU>
+        <RAM unidades="MB">2048</RAM>
+        <Disco tipo="vdi">D:/maquinas/millan.vdi</Disco>
+        <Tamano-del-disco unidades="GB">20</Tamano-del-disco>
+        <adaptador-de-red modo="NAT">
+            <Reenvio-de-puertos>
+                <normas>
+                    <HostPort>8081</HostPort>
+                    <GuestPort>80</GuestPort>
+                </normas>
+            </Reenvio-de-puertos>
+        </adaptador-de-red>
+    </Maquina-virtual>
+</Maquina-virtuals>
